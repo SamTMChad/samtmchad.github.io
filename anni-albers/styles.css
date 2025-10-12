@@ -1,5 +1,8 @@
 /* styles for both Anni Albers layouts */
 
+/* Laying out the first index.html file */
+
+
 main {
     width: 80%;
     max-width: 1100px;
@@ -39,3 +42,60 @@ p.callout{
 #row4 p {
     margin-left: calc(100% * 2 / 6);
 }
+
+
+/* ****************************************** */
+/* CSS for index 2 */
+/* ****************************************** */
+
+body#SecondLayout main {
+    display: grid;
+    grid-template-columns: repeat(6, auto) ;
+    grid-template-rows: repeat(11, auto) ;
+    grid-template-areas:
+        'title title title title title title'
+        '. . p1 p1 . .'
+        '. . p2 p2 . .'
+        'p3 p3 . . . .'
+        'p4 p4 . . . .'
+        '. . p5 p5 . .'
+        '. . . . p6 p6'
+        '. . . . p7 p7'
+        'p8 p8 . . . .'
+        '. p9 p9 . . .'
+        '. . p10 p10 . .'
+        '. . . . p11 p11'
+
+}
+
+#SecondLayout #titleRow { grid-area: title; }
+#SecondLayout #P1 { grid-area: p1; }
+#SecondLayout #P2 { grid-area: p2; }
+#SecondLayout #P3 { grid-area: p3; }
+#SecondLayout #P4 { grid-area: p4; }
+#SecondLayout #P5 { grid-area: p5; }
+#SecondLayout #P6 { grid-area: p6; }
+#SecondLayout #P7 { grid-area: p7; }
+#SecondLayout #P8 { grid-area: p8; }
+#SecondLayout #P9 { grid-area: p9; }
+#SecondLayout #P10 { grid-area: p10; }
+#SecondLayout #P11 { grid-area: p11; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
