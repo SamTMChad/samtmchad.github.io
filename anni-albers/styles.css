@@ -3,6 +3,7 @@
 /* Laying out the first index.html file */
 
 
+
 main {
     width: 80%;
     max-width: 1100px;
@@ -11,13 +12,17 @@ main {
 
 
 h1 {
-    font-size: 3rem;
+    font-size: 4rem;
+    text-align: center;
 }
 
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-style: italic;
+    text-align: center;
+    padding-bottom: 2rem;
+    
     
 }
 
@@ -25,27 +30,34 @@ h2 {
 p {
     font-size: 1.2rem;
     line-height: 2.5rem;
-    width: 50%;
+    width: 100%;
+    text-align: center;
+    
 }
 
 p.callout{
     font-size: 2rem;
-    line-height: 2.2rem;
+    line-height: 2.5rem;
     font-style: italic;
     float: right;
-    text-align: right;
-    padding-left: 2em;
+    text-align: center;
+    padding-top: 1em;
     margin-top: 0;
 }
 
-#row1 p,
-#row3 p {
-    margin-left: calc(100% * 1 / 6);
-}
 
 #row4 p {
-    margin-left: calc(100% * 2 / 6);
+    width: 50%;
+    float: left;
 }
+
+#row5 p {
+    width: 50%;
+    float: right;
+        
+}
+  
+    
 
 
 /* ****************************************** */
