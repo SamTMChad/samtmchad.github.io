@@ -9,14 +9,18 @@ main {
     margin: 0 auto;
 }
 
+
 h1 {
     font-size: 3rem;
 }
 
+
 h2 {
-    font-size: 0.75rem 
-    font-stle: italic;
+    font-size: 2rem;
+    font-style: italic;
+    
 }
+
 
 p {
     font-size: 1.2rem;
