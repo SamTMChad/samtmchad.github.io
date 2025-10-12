@@ -43,17 +43,23 @@ p.callout{
     text-align: center;
     padding-top: 1em;
     margin-top: 0;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 
 #row4 p {
     width: 50%;
     float: left;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 #row5 p {
     width: 50%;
     float: right;
+    padding-left: 2em;
+    padding-right: 2em;
         
 }
   
