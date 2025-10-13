@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<!-- meta tags and title -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Code Log 2: CSS Measuring Units</title>
+
+	<!-- external and internal CSS -->
+	<link rel="stylesheet" href="styles.css" media="all">
+	<style>
+
+		  textarea {
+            border: none;
+            padding: 10px;
+            background-color: cornflowerblue;
+        }
+	</style>
+
+
+</head>
+<body>
+
+	<h1>Code Log 2: CSS Measuring Units</h1>
+
+<p>What are the differences between absolute and relative CSS length units?</p>
+
+<textarea cols="100" rows="9">
+    Explanation:
+    There is one key difference between absolute and relative measurement units in CSS, and it lies in how they relate to other elements or the overall design context. 
+    Absolute measurement units refer to fixed values that do not change regardless of screen size, resolution, or the surrounding content. 
+    Because of their precision and predictability, absolute units are commonly used when exact measurements are required. Like when designing print or elements 
+    that must maintain stricter proportions across various environments.
+    On the other hand, relative measurement units are dynamic and depend on other factors such as the parent elements size or the root font size of the document.
+    Relative units are ideal for creating responsive designs that adapt to different devices and screen sizes, making them essential in modern web development.
+    They provide flexibility, allowing designers to create layouts that scale naturally and maintain usability across a range of display settings.
+</textarea>
+
+
+<textarea cols="100" rows="9">
+    Relative measurment examples - px, pt (Pixels and Points): The px unit stands for pixels, and is a very popular unit. In CSS, a pixel is defined as a fixed length 
+    that should appear consistent across devices, based on a reference pixel. According to standard, 1px is defined as 1/96th of 1 inch
+    The pt unit stands for points, a traditional unit from print design. In CSS, one point is 1/72 of an inch. This comes from the world of typography and printing.
+</textarea>
+
+<textarea cols="100" rows="9">
+    Absolute measurement example #1 - em, rem: The em unit is a relative unit that is based on the computed font size of the parent element.
+    For example, if the parent element has a font-size of 16px, then 1em equals 16px. If you set an element’s font-size: 2em;, it will be 2 × 16px = 32px
+    It is primarily and commonly used for scaling font sizes. The rem unit stands for “root em”, and it's based on the font size of the root element (<html>), 
+    not the parent element.
+    This makes it more predictable and easier to manage than em.
+</textarea>
+
+<textarea cols="100" rows="9">
+    Absolute measurement example #2 - vw, vh: vh stands for viewport height, where 1vh is equal to 1% of the height of the the browser window (visible viewport).
+    Like for example, if the viewport height is 1000px, then 1vh = 10px. 100vh would fill the entire visible height of the browser window. Its useful for when 
+    you want to create full-screen sections of a page. vw stands for viewport width, where 1vw is equal to 1% of the width of the visible viewport. This means 
+    that the two in tandem work together as width and height measurements.
+</textarea>
+
+
+</body>
+</html>
