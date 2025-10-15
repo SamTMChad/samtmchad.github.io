@@ -9,6 +9,7 @@
 body {
     padding: 0;
     margin: 0;
+    background-color: pink;
 
 }
 
@@ -42,17 +43,36 @@ header {
     background-color: white
 }
 
-#TAB {
+
+.TAB {
+    width: 80vw;
+    background: white;
     
 
 
 }
 
-#AKA p {
+#HOW {
+    margin: 60px;
+    box-shadow: 10px 5px 5px black
+    
+}
 
+#HOW p1 {
+    font-family: Helvetica;
+    padding-top: 10px;
+    color: black;
 
+      
+}
 
+#HOW h2 {
+    font-family: MS serif;
+   
+}
 
+#CLIMATE {
+    margin: 60px
 }
 
 @media screen and (orientation: landscape) {
@@ -64,10 +84,9 @@ header {
 
 #RhodoTitle h1 {
     color: white;
-    background-color: pink;
+    background-color: b;
     bottom: 6.9em;
      
 }
     
 }
-
