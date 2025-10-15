@@ -47,15 +47,32 @@ header {
 .TAB {
     width: 80vw;
     background: white;
-    
-
+    box-shadow: 10px 5px 5px black;
+    margin-bottom: 60px;
+    padding: 10px;
 
 }
 
+#AKA {
+    float: left;
+}
+
 #HOW {
-    margin: 60px;
-    box-shadow: 10px 5px 5px black
+    float: right;
+    clear: both;
     
+    
+}
+
+#WHERE {
+    float: left;
+    clear: both;
+    
+}
+
+#CLIMATE {
+    float: right;
+    clear: both;
 }
 
 #HOW p1 {
@@ -72,7 +89,6 @@ header {
 }
 
 #CLIMATE {
-    margin: 60px
 }
 
 @media screen and (orientation: landscape) {
@@ -84,9 +100,10 @@ header {
 
 #RhodoTitle h1 {
     color: white;
-    background-color: b;
-    bottom: 6.9em;
-     
+    background-color: black;
+    bottom: 42vh;
+    width: 100vw;
+     text-align: center;
 }
     
 }
