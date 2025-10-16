@@ -50,16 +50,19 @@ header {
     box-shadow: 10px 5px 5px black;
     margin-bottom: 60px;
     padding: 10px;
+    
 
 }
 
 #AKA {
     float: left;
+    clear: both;
 }
 
 #HOW {
     float: right;
     clear: both;
+    box-shadow: -10px 5px 5px black;
     
     
 }
@@ -73,25 +76,34 @@ header {
 #CLIMATE {
     float: right;
     clear: both;
+    box-shadow: -10px 5px 5px black;
 }
 
-#HOW p1 {
-    font-family: Helvetica;
-    padding-top: 10px;
+#AKA h2 {
+    font-family: Georgia;
     color: black;
 
       
 }
 
 #HOW h2 {
-    font-family: MS serif;
+    font-family: Georgia;
+    color: black;
    
 }
 
-#CLIMATE {
+#WHERE h2 {
+    font-family: Georgia;
+    color: black;
 }
 
-@media screen and (orientation: landscape) {
+#CLIMATE h2{
+    font-family: Georgia;
+    color: black;  
+}
+
+@media screen and (orientation: landscape) 
+{
 
 #RhodoPic {
     width: 100vw;
@@ -105,5 +117,29 @@ header {
     width: 100vw;
      text-align: center;
 }
-    
+
+.TAB {
+    width: 100vw;
+    background: white;
+    box-shadow: 0px 10px 5px black;
+    margin-bottom: 60px;
+    padding: 20px;
+}
+
+#HOW {
+    float: right;
+    clear: both;
+    box-shadow: 0px 10px 5px black;
+    float: left;
+    clear: both;
+}
+
+#CLIMATE {
+    float: right;
+    clear: both;
+    box-shadow: 0px 10px 5px black; 
+    float: left;
+    clear: both;
+}
+
 }
