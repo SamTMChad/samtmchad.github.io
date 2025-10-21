@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- meta tags and title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Log 3: CSS Media Queries</title>
+
+    <!-- external and internal CSS -->
+    <link rel="stylesheet" href="styles.css" media="all">
+    <style>
+        /* in-file CSS here */
+    </style>
+
+    <h1>Code Log 3: CSS Media Queries</h1>
+
+    <h2>How does a CSS media query work, and why is it useful?</h2>
+
+    <p>
+        Explanation:
+        A CSS media query is used when you want your web content to adapt to different screen sizes or devices. It can
+        apply specific styles
+        only when certain conditions are met, like screen width, height, or orientation, so it helps you customiza. It
+        works by checking the
+        the user's device and then applying CSS styles that match those conditions. This is especially useful for
+        creating responsive
+        websites that look good and work well on desktops, tablets, and smartphones without needing separate versions of
+        the site.
+    </p>
+
+    <h3>Media Features that are Supported by Media Queries and Examples:</h3>
+
+    <p>
+        Orientation - This can be used to apply styles based on whether a device is in portrait or landscape mode.
+        Portrait meaning the height is greater than the width
+        and landscape meaning vice versa. For Example applying the color lightblue specifically to landscape:
+    </p>
+
+    <textarea cols="100" rows="5">
+    @media (orientation: landscape) {
+  body {
+    background-color: lightblue;
+  }
+}
+    </textarea>
+
+    <p>
+        Max Width - applies styles only when the screen width is less than or equal to a specified value.
+        It's commonly used to make websites responsive by adjusting the layout for smaller screens like tablets and
+        phones.
+        Here's an example of the font size changing only when the screen is 600 pixels wide or less to a smaller
+        readible size.
+    </p>
+
+    <textarea cols="100" rows="10">
+   @media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
+    </textarea>
+
+
+    <p>
+        Aspect Ratio - targets devices based on the ratio of width to height of the screen or viewport.
+        It helps you apply styles depending on whether the screen is wide or tall in proportion, regardless of its
+        actual size.
+        Here's another example of applying it for a different background color only if the screen has a 16:9 aspect
+        ratio.
+        It’s useful when you want to optimize layouts for specific screen shapes, like widescreens or square displays.
+    </p>
+
+    <textarea cols="100" rows="5">
+@media (aspect-ratio: 16/9) {
+  body {
+    background-color: lightgreen;
+  }
+}
+     </textarea>
+
+    <p>
+        Pointer - is used to detect the accuracy of the pointing device (like a mouse, stylus, or finger)
+        available on the user's device. It helps you adjust the UI based on how precise the user can interact with
+        elements.
+        Here's an example where it increases button padding when the device has a coarse pointer, improving usability on
+        touchscreens.
+        Making buttons easier to tap on touch devices.
+    </p>
+
+    <textarea cols="100" rows="5">
+   @media (pointer: coarse) {
+  button {
+    padding: 16px; 
+  }
+}
+    </textarea>
+</head>
+
+<body>
+
+    <!-- HTML elements here -->
+
+</body>
+
+</html>
