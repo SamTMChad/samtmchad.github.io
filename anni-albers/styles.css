@@ -83,24 +83,26 @@ p.callout{
 
 body#SecondLayout main {
     display: grid;
-    grid-template-columns: repeat(6, auto) ;
-    grid-template-rows: repeat(11, auto) ;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(14, auto);
     grid-template-areas:
-        'title title title title title title'
-        '. . p1 p1 . .'
-        '. . p2 p2 . .'
-        'p3 p3 . . . .'
-        'p4 p4 . . . .'
-        '. . p5 p5 . .'
-        '. . . . p6 p6'
-        '. . . . p7 p7'
-        'p8 p8 . . . .'
-        '. p9 p9 . . .'
-        '. . p10 p10 . .'
-        '. . . . p11 p11'
-
+        "title title title title"
+        "p1 p1 . ."
+        ". p2 p2 ."
+        "p3 p3 . ."
+        ". p4 p4 ."
+        "p5 p5 . ."
+        ". p6 p6 ."
+        "p7 p7 . ."
+        ". p8 p8 ."
+        "p9 p9 . ."
+        ". p10 p10 ."
+        "p11 p11 . ."
+        ". p12 p12 ."
+        "p13 p13 . .";
 }
 
+/* === Assign grid areas === */
 #SecondLayout #titleRow { grid-area: title; }
 #SecondLayout #P1 { grid-area: p1; }
 #SecondLayout #P2 { grid-area: p2; }
@@ -113,11 +115,8 @@ body#SecondLayout main {
 #SecondLayout #P9 { grid-area: p9; }
 #SecondLayout #P10 { grid-area: p10; }
 #SecondLayout #P11 { grid-area: p11; }
-
-
-
-
-
+#SecondLayout #P12 { grid-area: p12; }
+#SecondLayout #P13 { grid-area: p13; }
 
 
 
