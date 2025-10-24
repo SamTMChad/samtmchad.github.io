@@ -1,7 +1,7 @@
-#CL4EX h3 {
+#CL4EX {
    color: white;
    background-color: orange;
-   border: 5px solid red;
+   border-color: 5px solid red; 
    padding: 20px;
    width: 200px;
    text-align: center;
