@@ -76,6 +76,15 @@ p.callout{
     float: left;      
 }
 
+#row12 p {
+    width: 50%;
+    float: left; 
+}
+
+#row13 p {
+    width: 50%;
+    float: left;      
+}
 
 /* ****************************************** */
 /* CSS for index 2 */
@@ -117,12 +126,6 @@ body#SecondLayout main {
 #SecondLayout #P11 { grid-area: p11; }
 #SecondLayout #P12 { grid-area: p12; }
 #SecondLayout #P13 { grid-area: p13; }
-
-
-
-
-
-
 
 
 
