@@ -1,0 +1,189 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Custom Properties Menu */
+
+:root {
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --clr-light: #ffffff;
+    --clr-dark: #303030;
+    --clr-accent: #316310;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+
+    --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25),
+        0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
+}
+
+
+
+body {
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+}
+
+section {
+    padding: 0em 0em;
+}
+
+img {
+    display: absolute;
+    max-width: 100%;
+
+}
+
+h1 {
+    line-height: 1;
+    margin: 0;
+}
+
+h2 {
+    line-height: 2;
+    margin: 0;
+    font-size: 10em;
+    text-align: center;
+}
+
+
+h3 {
+    line-height: 1;
+    margin: 0;
+}
+
+h1 {
+    font-size: var(--fs-h1)
+}
+
+h2 {
+    font-size: var(--fs-h2)
+}
+
+h3 {
+    font-size: var(--fs-h3)
+}
+
+.title {
+    grid-area: title;
+    align-self: center;
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: 3rem;
+    max-width: 800px;
+    padding-top: 1em;
+}
+
+.intro {
+    position: relative;
+    /* space between title and image */
+    margin: 0em auto;
+    text-align: left;
+    /* title text aligns left */
+    max-width: 1000px;
+    padding-bottom: 1em;
+}
+
+
+    #direc {
+        margin-left: 2em; 
+        margin-right: 2em; 
+    }
+
+#desc {
+    float: left;
+    margin-left: 2em; 
+    margin-right: 2em; 
+}
+
+#ingr {
+    padding-left: 1em;
+
+}
+
+    #details {
+        align-items: left;
+        text-align: left;
+
+    }
+
+@media screen and (orientation: landscape) {
+
+
+    .intro {
+        display: grid;
+        margin: 0 auto;
+        grid-column-gap: 30em;
+        justify-content: center;
+        align-items: center;
+        grid-template-areas:
+            "title img";
+        grid-template-columns: 1fr auto;
+
+    }
+
+
+    img {
+        display: absolute;
+        max-width: 80vh;
+        max-height: 60vw;
+
+    }
+
+    .title {
+        display: absolute;
+        font-size: 5rem;
+        align-items: center;
+        margin-left: 5em;
+    }
+
+    #details {
+        align-items: left;
+        text-align: left;
+        margin-bottom: 5em;
+        margin-top: 5em;
+
+    }
+
+
+
+    #direc {
+        align-items: left;
+        text-align: left;
+        margin-left: 5em;
+        margin-right: 5em;
+        
+        
+    }
+
+        #desc {
+        align-items: left;
+        text-align: left;
+        margin-left: 5em;
+        margin-right: 5em;
+    }
+
+    #ingr {
+        margin-left: 5em;
+        margin-right: 5em;
+    }
+
+
+
+
+
+
+}

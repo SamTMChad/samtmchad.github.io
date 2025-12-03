@@ -1,0 +1,238 @@
+/* styles for both Anni Albers layouts */
+
+/* Laying out the first index.html file */
+
+
+
+main {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+
+h2 {
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    
+    
+}
+
+
+p {
+    font-size: 20px;
+    line-height: 2.5rem;
+    width: 100%;
+    text-align: center;
+    
+}
+
+p.callout{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-style: italic;
+    text-align: center;
+}
+
+
+#row1 {
+    width: 100%;
+    
+}
+
+#row2 {
+    width: 100%;
+    padding-bottom: 2em;
+    
+}
+
+#call1 {
+    width: 50%;
+    float: right;
+    padding-left: 3em;
+}
+
+#row3 {
+    width: 50%;
+    padding-bottom: 2em;
+   
+}
+
+#row3 p {
+    text-align: left;
+}
+
+
+
+#row4 {
+    width: 100%;
+    padding-bottom: 5em;
+}
+
+#call2 {
+    width: 50%;
+    float: right;
+    padding-left: 3em;
+}
+
+
+
+#row5 {
+    width: 50%;
+    padding-bottom: 3em;
+          
+}
+
+#row5 p {
+    text-align: left;
+}
+
+
+#row6 {
+    width: 100%;
+    padding-bottom: 3em;
+    
+}
+
+#row7 {
+    width: 50%;
+    padding-left: 0em;
+
+}
+
+#row7 p {
+    text-align: left;
+}
+
+
+
+#call3 {
+    width: 50%;
+    float: right;
+    padding-left: 3em;
+    
+}
+
+
+#row8  {
+    width: 100%;
+    padding-bottom: 3em;
+}
+
+#call4 {
+    width: 50%;
+    float: right;
+    padding-left: 3em;
+    
+}
+
+#row9  {
+    width: 50%;
+    padding-bottom: 3em;
+}
+
+#row9 p {
+    text-align: left;
+}
+
+
+#row10 {
+    width: 100%;
+         
+}
+
+#row11 {
+    width: 100%;
+          
+}
+
+#row12 {
+    width: 100%;
+     
+}
+
+#row13 {
+    width: 100%;
+    padding-bottom: 3em;
+         
+}
+
+#moreInfo {
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    
+}
+
+
+
+/* ****************************************** */
+/* CSS for index 2 */
+/* ****************************************** */
+
+body#secondLayout main {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(19, auto);
+    grid-template-areas:
+        ". title title title title ."
+        ". p1 p1 p1 p1 ."
+        ". p2 p2 p2 p2 ."
+        ". c1 c1 c1 c1 ."
+        ". p3 p3 p3 p3 ."
+        ". p4 p4 p4 p4 ."
+        ". c2 c2 c2 c2 ."
+        ". p5 p5 p5 p5 ."
+        ". p6 p6 p6 p6 ."
+        ". c3 c3 c3 c3 ."
+        ". p7 p7 p7 p7 ."
+        ". p8 p8 p8 p8 ."
+        ". c4 c4 c4 c4 ."
+        ". p9 p9 p9 p9 ."
+        ". p10 p10 p10 p10 ."
+        ". p11 p11 p11 p11 ."
+        ". p14 p14 p14 p14 ."
+        ". p12 p12 p12 p12 ."
+        ". p13 p13 p13 p13 .";
+}
+
+
+/* Assign grid areas */
+#secondLayout #titleRow { grid-area: title; }
+#secondLayout #row1 { grid-area: p1; }
+#secondLayout #row2 { grid-area: p2; }
+#secondLayout #call1 { grid-area: c1; }
+#secondLayout #row3 { grid-area: p3; }
+#secondLayout #row4 { grid-area: p4; }
+#secondLayout #call2 { grid-area: c2; }
+#secondLayout #row5 { grid-area: p5; }
+#secondLayout #row6 { grid-area: p6; }
+#secondLayout #call3 { grid-area: c3; }
+#secondLayout #row7 { grid-area: p7; }
+#secondLayout #row8 { grid-area: p8; }
+#secondLayout #call4 { grid-area: c4; }
+#secondLayout #row9 { grid-area: p9; }
+#secondLayout #row10 { grid-area: p10; }
+#secondLayout #row11 { grid-area: p11; }
+#secondLayout #infoATA { grid-area: p14; }
+#secondLayout #row12 { grid-area: p12; }
+#secondLayout #row13 { grid-area: p13; }
+
+
+
+
+
+
+
+
