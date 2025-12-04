@@ -23,7 +23,7 @@ header {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background-image: ("Pacific\ Rhododendron\ 3\ -\ Gary\ Monroe-1.jpeg");
+    background-image: url("Pacific\ Rhododendron\ 2\ -\ Gary\ Monroe-1.jpeg");
     background-size: cover;
     background-position: center center;
 }
@@ -103,6 +103,85 @@ header {
 }
 
 
+#toggleDarkMode {
+   
+    font-family: Helvetica, sans-serif;
+    padding: 10px 20px;
+    background: white;
+    color: black;
+    border-radius: 3px;
+    margin-top: 5em;
+    margin-left: 67em;
+    margin-bottom: 5em;
+    position: relative;
+   
+}
+
+.darkMode #RhodoPic {
+
+background-image: url("Pacific\ Rhododendron\ 3\ -\ Gary\ Monroe-1.jpeg");
+
+}
+
+body.darkMode {
+  color: white;
+  background: #242424;
+}
+
+
+body.darkMode .TAB {
+  color: white;
+  background: darkgray;
+  box-shadow: 0px 10px 5px pink;
+
+}
+
+
+body.darkMode #HOW {
+  color: white;
+  background: darkgray;
+  box-shadow: 0px 10px 5px pink;
+
+}
+
+
+body.darkMode #CLIMATE {
+  color: white;
+  background: darkgray;
+  box-shadow: 0px 10px 5px pink;
+
+}
+
+body.darkMode #AKA h2 {
+    font-family: Georgia;
+    color: white;
+
+      
+}
+
+body.darkMode #HOW h2 {
+    font-family: Georgia;
+    color: white;
+   
+}
+
+body.darkMode #WHERE h2 {
+    font-family: Georgia;
+    color: white;
+}
+
+body.darkMode #CLIMATE h2{
+    font-family: Georgia;
+    color: white;  
+}
+
+
+
+@media screen and (orientation: landscape) 
+{
+
+
+
 #RhodoPic {
     width: 100vw;
     height: 50vh;
@@ -141,37 +220,16 @@ header {
 }
 
 
-
 #toggleDarkMode {
-   
-    font-family: Helvetica, sans-serif;
-    padding: 10px 20px;
-    background: white;
-    color: black;
-    border-radius: 3px;
-    margin-top: 5em;
-    margin-left: 67em;
-    margin-bottom: 5em;
-    
-}
-
-body.darkMode {
-  background: darkgray;
-  color: white;
-  padding: 24px;
-  margin: 20px 0;
-  box-shadow: -10px 5px 5px lightgray;
-  border: 2px solid white;
-
-}
-
-body.darkMode h2 {
-  color: white;
-  letter-spacing: 0.04em;
-}
-
-
-@media screen and (orientation: landscape) 
-{
-
+    position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
     }
+
+
+
+}
+
+
+
