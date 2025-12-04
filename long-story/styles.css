@@ -51,11 +51,11 @@ section {
 }
 
 /* apply background images to sections; section1 and section4 have the same background; note background styles in the section selector too */
-#section1 { background-image: url('luke-witter-6XYcgk3WWwY-unsplash.jpg'); }
-#section2 { background-image: url('images/geranimo-qzgN45hseN0-unsplash.jpg'); }
-#section3 { background-image: url('images/kristjan-kotar--h15p84GY5k-unsplash.jpg'); }
-#section4 { background-image: url('images/greg-rosenke-8F47XWiUPrQ-unsplash.jpg'); }
-#section5 { background-image: url('images/greg-rosenke-8F47XWiUPrQ-unsplash.jpg'); }
+#section1 { background-image: url('wallpapersden.com_nba-champions-milwaukee-bucks-2021_3727x2483.jpg'); }
+#section2 { background-image: url('bucksvsheat.jpg'); }
+#section3 { background-image: url('bucksvsnets.jpg'); }
+#section4 { background-image: url('bucksvshawks.jpg'); }
+#section5 { background-image: url('bucksvssuns.jpg'); }
 
 
 /* content divs within the sections are positioned absolutely to the top and right, almost half the page wide */
@@ -67,5 +67,6 @@ section > .content {
     padding: 1rem;
     text-align: center;
     color: white;
+    background-color: black;
     font-size: 2rem;
 }
