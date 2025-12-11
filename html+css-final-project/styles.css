@@ -1,0 +1,1160 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Custom Properties Menu */
+
+:root {
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --clr-light: #ffffff;
+    --clr-dark: #303030;
+    --clr-accent: #316310;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+
+    --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25),
+        0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
+}
+
+#HeaderPic {
+
+    position: static;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("danny-howe-6hJl9q0bPtI-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
+
+}
+
+#GroupTitle {
+    position: absolute;
+    background-color: white;
+    color: black;
+    padding: 2;
+    margin: 0;
+    bottom: 0;
+    left: 0;
+    font-size: 50px;
+}
+
+#DESC {
+    font-family: 'Source Sans Pro', sans-serif; /* or your preferred font */
+    font-size: 32px; /* Base size for readability */
+    line-height: 2; /* Good spacing between lines */
+    color: #ffffff; /* Dark gray for text */
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    margin: 0;
+    padding: var(--nav-height) 0 0 0;
+
+}
+
+main {
+    margin: 0;
+    padding: var(--nav-height) 0 0 0;
+    padding-bottom: 10em;
+    padding-right: 10em;
+    padding-left: 10em;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+@media screen and (orientation: landscape) {}
+
+/* CSS for responsive menu demo */
+
+/* define variables */
+:root {
+    --nav-height: 3rem;
+    --nav-bkgd-color: white;
+    --nav-text-color: black;
+    --nav-hover-bkgd-color: lightgray;
+    --nav-hover-text-color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--nav-height);
+    background-color: var(--nav-bkgd-color);
+}
+
+#navBurger {
+    position: relative;
+    display: block;
+    font-size: 2rem;
+    color: var(--nav-text-color);
+    padding: 0.1em 0 0 0.3em;
+    max-height: 2rem;
+}
+
+nav ul {
+    position: relative;
+    background-color: var(--nav-bkgd-color);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav>ul {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+nav.clicked>ul {
+    max-height: 90vh;
+}
+
+nav>ul>li {
+    position: relative;
+    background-color: var(--nav-bkgd-color);
+    display: block;
+    margin: 1rem;
+}
+
+nav>ul>li>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+}
+
+nav>ul>li>a::after {
+    position: absolute;
+    content: "⌄";
+    right: 0.3rem;
+    top: 0.2rem;
+    color: inherit;
+    font-size: 110%;
+}
+
+nav>ul>li>ul {
+    margin: 0 0 0 1rem;
+    background-color: inherit;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+nav>ul>li.clicked>ul {
+    max-height: 90vh;
+}
+
+nav>ul>li>ul>li {
+    padding: 0.5rem 0 0.5rem 0.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--nav-text-color);
+}
+
+nav>ul>li>ul>li:hover {
+    background-color: var(--nav-hover-bkgd-color);
+}
+
+nav>ul>li>ul>li:hover a {
+    color: var(--nav-hover-text-color);
+}
+
+
+/* ----- MEDIA QUERY for landscape/desktop layout ----- */
+@media screen and (orientation: landscape) {
+
+    #navBurger {
+        display: none;
+    }
+
+    nav>ul {
+        overflow: visible;
+    }
+
+    nav>ul>li {
+        float: left;
+        margin: 0.5rem;
+    }
+
+    nav>ul>li a {
+        padding-right: 0.5rem;
+        margin: 0;
+    }
+
+    nav>ul>li>ul {
+        margin: 0 0.5rem 0.5rem 0;
+        visibility: hidden;
+        position: absolute;
+    }
+
+    nav>ul>li.clicked>ul {
+        display: block;
+        visibility: visible;
+    }
+
+    nav>ul>li>ul li {
+        margin: 0;
+        white-space: nowrap;
+    }
+
+    nav>ul>li>a::after {
+        content: "";
+    }
+
+}
+
+/* ----- CSS for page2 ----- */
+
+/* Background Attachment Vertical */
+
+/* load font Titillium Web from Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+
+* {
+    box-sizing: border-box; /* set box-sizing to make dimensions primary */
+}
+
+html, body {
+	padding: 0;
+	margin: 0;
+	font-family: "Oswald", sans-serif;
+}
+
+html {
+	scroll-snap-type: y mandatory; /* force scroll snap for vertical elements */
+}
+
+body {
+	overflow-x: hidden; /* hide horizontal scrollbars */
+	overflow-y: auto; /* show vertical scrollbars */
+}
+
+/* eliminate default padding from content elements */
+h1, h2, p {
+    align-items: center;
+	padding: 0;
+	margin: 0;
+}
+
+/* all sections are positioned relative and have a full-page height of 100vh, plus some background settings */
+section {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+	scroll-snap-align: start; /* force scrolling to align with the top edge of this element */
+}
+
+/* absolutely positioned full-width element with a border provides a frame */
+.borderOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+/* apply background images to sections; section1 and section4 have the same background; note background styles in the section selector too */
+#section1 { background-image: url('members-of-brockhampton.jpg'); }
+#section2 { background-image: url('kevin.jpg'); }
+#section3 { background-image: url('ameer.jpg'); }
+#section4 { background-image: url('bucksvshawks.jpg'); }
+#section4 { background-image: url('matt.jpg'); }
+#section5 { background-image: url('bear.jpg'); }
+#section6 { background-image: url('joba-throughout-the-years-v0-lz3in49pfptc1.jpg'); }
+#section7 { background-image: url('MerlynWood_pk1stu.jpg'); }
+#section8 { background-image: url('hq720.jpg'); }
+#section9 { background-image: url('9034_original.jpg'); }
+#section10 { background-image: url('x53l4913qjm71.jpg'); }
+
+
+
+/* content divs within the sections are positioned absolutely to the top and right, almost half the page wide */
+section > .content {
+    position: absolute;
+    width: 100%;
+    bottom: 3rem;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-size: 2rem;
+}
+
+/* ----- CSS for page3 ----- */
+
+
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+/*  MAIN GRID LAYOUT */
+.gridPage {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* 6 equal columns */
+    grid-auto-rows: minmax(150px, auto);
+    /* adjustable rows */
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+/* IMAGE: spans 4 columns */
+#BiographyPic {
+    grid-column: 1 / span 5;
+    grid-row: 1 / span 5;
+    background-image: url("by-Conor-Cunningham-1000x667.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+}
+
+/* TITLE: spans 2 columns */
+#BiographyBio {
+    grid-column: 7 / span 2;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 10px 5px 5px black;
+}
+
+#BiographyBio h1 {
+    color: black;
+    text-align: center;
+
+}
+
+/* BIO TEXT: full width under image */
+#BIOG {
+    grid-column: 6 / span 4;
+    grid-row: 2 / span 4;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 10px 5px 5px black;
+}
+
+#BIOG h2 {
+    margin-bottom: 1rem;
+}
+
+#BIOG p {
+    line-height: 1.7;
+    font-size: 20px;
+}
+
+/* ----- CSS for page9 ----- */
+
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+/*  MAIN GRID LAYOUT */
+.gridPage {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* 6 equal columns */
+    grid-auto-rows: minmax(150px, auto);
+    /* adjustable rows */
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+/* IMAGE: spans 4 columns */
+#EOAEPic {
+    grid-column: 1 / span 6;
+    grid-row: 1 / span 5;
+    background-image: url("brockhamptonEOAE.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+}
+
+/* TITLE: spans 2 columns */
+#EOAEBio {
+    grid-column: 2 / span 4;
+    grid-row: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 10px 5px 5px black;
+}
+
+#EOAEBio h1 {
+    color: black;
+    text-align: center;
+
+}
+
+/* BIO TEXT: full width under image */
+#MTEXT {
+    grid-column: 7 / span 3;
+    grid-row: 2;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: left;
+
+}
+
+#MTEXT h2 {
+    margin-bottom: 1rem;
+}
+
+#MTEXT p {
+    line-height: 1.7;
+    font-size: 20px;
+}
+
+
+/* ----- CSS for page10 ----- */
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+/*  MAIN GRID LAYOUT */
+.gridPage {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* 6 equal columns */
+    grid-auto-rows: minmax(150px, auto);
+    /* adjustable rows */
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+
+
+/* TITLE: spans 2 columns */
+#YMALHead {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+
+}
+
+#YMALHead h1 {
+    color: black;
+    text-align: left;
+
+}
+
+
+/* IMAGES:  */
+#AMpic {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 3;
+    background-image: url("amine.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+}
+
+#VSpic {
+    grid-column: 1 / span 2;
+    grid-row: 5 / span 3;
+    background-image: url("vince-staples.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+}
+
+#DFpic {
+    grid-column: 1 / span 2;
+    grid-row: 8 / span 3;
+    background-image: url("dom-fike.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+}
+
+#QUADpic {
+    grid-column: 1 / span 2;
+    grid-row: 11 / span 3;
+    background-image: url("quadeca.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+}
+
+
+
+
+/* BIO TEXT: full width next to image */
+.AMwrap {
+    grid-column: 3 / span 9;
+    grid-row: 2 / span 3;
+    background: #DC878E;
+    border-radius: 16px;
+    padding: 1rem;
+    /* Used Chat to fix small grid issue below */
+    display: grid;
+    /* ✅ THIS WAS MISSING */
+    grid-template-columns: 1fr 1fr;
+    /* ✅ enables layout inside */
+    gap: 1rem;
+}
+
+#AMDESC {
+    grid-column: 1;
+    grid-row: 1;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: left;
+}
+
+#AMalbumpic {
+    grid-column: 2;
+    grid-row: 1;
+    background-image: url("amine-13-months-sunshine.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+
+}
+
+.VSwrap {
+    grid-column: 3 / span 9;
+    grid-row: 5 / span 3;
+    background: #1B4FA3;
+    border-radius: 16px;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+#VSDESC {
+    grid-column: 1;
+    grid-row: 1;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: left;
+}
+
+#VSalbumpic {
+    grid-column: 2;
+    grid-row: 1;
+    background-image: url("Vince-Staples-Big-Fish-Theory.jpeg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+
+}
+
+.DFwrap {
+    grid-column: 3 / span 9;
+    grid-row: 8 / span 3;
+    background: #DD4554;
+    border-radius: 16px;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+#DFDESC {
+    grid-column: 1;
+    grid-row: 1;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: left;
+}
+
+#DFalbumpic {
+    grid-column: 2;
+    grid-row: 1;
+    background-image: url("sunburn.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+
+}
+
+.QUADwrap {
+    grid-column: 3 / span 9;
+    grid-row: 11 / span 3;
+    background: #C9AE67;
+    border-radius: 16px;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+#QUADDESC {
+    grid-column: 1;
+    grid-row: 1;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: left;
+}
+
+#QUADalbumpic {
+    grid-column: 2;
+    grid-row: 1;
+    background-image: url("vanisher.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+
+}
+
+/* ----- CSS for page4 ----- */
+
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*  MAIN GRID LAYOUT */
+.gridPage {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    /* 6 equal columns */
+    grid-auto-rows: minmax(150px, auto);
+    /* adjustable rows */
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+/* IMAGE: spans 4 columns */
+#SaturationPic {
+    grid-column: 3 / span 5;
+    grid-row: 1 / span 3;
+    background-image: url("saturation.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+}
+
+/* TITLE: spans 2 columns */
+#SaturationTL {
+    grid-column: 4 / span 3;
+    grid-row: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: white;
+    border-radius: 12px;
+
+}
+
+#TL1TEXT {
+    grid-column: 1 / span 3;
+    grid-row: 5;
+    display: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 12px;
+    color: white;
+
+}
+
+#TL2TEXT {
+    grid-column: 4 / span 3;
+    grid-row: 5;
+    display: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 12px;
+    color: white;
+}
+
+#TL3TEXT {
+    grid-column: 7 / span 3;
+    grid-row: 5;
+    display: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 12px;
+    color: white;
+}
+
+a:active {
+    color: black;
+    /* Same color as normal state */
+}
+
+a:hover {
+    color: darkgray;
+}
+
+
+#FAV1 {
+    grid-column: 1 / span 3;
+    grid-row: 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: #ffd13ae0;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none
+}
+
+#FAV2 {
+    grid-column: 4 / span 3;
+    grid-row: 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: #ffd13ae0;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none
+}
+
+#FAV3 {
+    grid-column: 7 / span 3;
+    grid-row: 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: #ffd13ae0;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none
+}
+
+#REVIEW {
+    grid-column: 1 / span 9;
+    grid-row: 7;
+    display: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 12px;
+    color: white;
+}
+
+/* ----- CSS for page5 ----- */
+
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0E5585;
+}
+
+/*  MAIN GRID LAYOUT */
+.gridPage {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    /* 6 equal columns */
+    grid-auto-rows: minmax(150px, auto);
+    /* adjustable rows */
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+/* IMAGE: spans 4 columns */
+#RoadrunnerPic {
+    grid-column: 1 / span 5;
+    grid-row: 1 / span 4;
+    background-image: url("roadrunner.jpeg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+}
+
+/* TITLE: spans 2 columns */
+#RoadrunnerTL {
+    grid-column: 6 / span 5;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: white;
+    border-radius: 12px;
+
+}
+
+#rrREVIEW {
+    grid-column: 6 / span 4;
+    grid-row: 2;
+    display: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 12px;
+    color: white;
+}
+
+#rrFAV1 {
+    grid-column: 6 / span 4;
+    grid-row: 4;
+    display: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none
+}
+
+ul {
+    list-style-type: none
+}
+
+#rrTL1TEXT {
+    grid-column: 6 / span 4;
+    grid-row: 3;
+    display: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 12px;
+    color: white;
+
+}
+
+a:active {
+    color: black;
+    /* Same color as normal state */
+}
+
+
+/* ----- CSS for page6 ----- */
+
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #E7426D;
+}
+
+/*  MAIN GRID LAYOUT */
+.gridPage {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    /* 6 equal columns */
+    grid-auto-rows: minmax(150px, auto);
+    /* adjustable rows */
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+/* IMAGE: spans 4 columns */
+#iridescencePic {
+    grid-column: 1 / span 5;
+    grid-row: 1 / span 4;
+    background-image: url("Screenshot\ 2025-12-10\ 205059.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+}
+
+/* TITLE: spans 2 columns */
+#iridescenceTL {
+    grid-column: 6 / span 5;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: white;
+    border-radius: 12px;
+
+}
+
+#irREVIEW {
+    grid-column: 6 / span 4;
+    grid-row: 2;
+    display: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 12px;
+    color: white;
+}
+
+#irFAV1 {
+    grid-column: 6 / span 4;
+    grid-row: 4;
+    display: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none
+}
+
+#irTL1TEXT {
+    grid-column: 6 / span 4;
+    grid-row: 3;
+    display: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 12px;
+    color: white;
+
+}
+
+a:active {
+    color: black;
+    /* Same color as normal state */
+}
+
+
+/* ----- CSS for page7 ----- */
+
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*  MAIN GRID LAYOUT */
+.gridPage {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    /* 6 equal columns */
+    grid-auto-rows: minmax(150px, auto);
+    /* adjustable rows */
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+/* IMAGE: spans 4 columns */
+#gingerPic {
+    grid-column: 1 / span 5;
+    grid-row: 1 / span 4;
+    background-image: url("gingeralbum.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+}
+
+/* TITLE: spans 2 columns */
+#gingerTL {
+    grid-column: 6 / span 5;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: white;
+    border-radius: 12px;
+
+}
+
+#ginREVIEW {
+    grid-column: 6 / span 4;
+    grid-row: 2;
+    display: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 12px;
+    color: white;
+}
+
+#ginFAV1 {
+    grid-column: 6 / span 4;
+    grid-row: 4;
+    display: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none
+}
+
+#ginTL1TEXT {
+    grid-column: 6 / span 4;
+    grid-row: 3;
+    display: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 12px;
+    color: white;
+
+}
+
+a:active {
+    color: black;
+    /* Same color as normal state */
+}
+
+
+
+/* ----- CSS for page8 ----- */
+
+
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #be5504;
+}
+
+/*  MAIN GRID LAYOUT */
+.gridPage {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    /* 6 equal columns */
+    grid-auto-rows: minmax(150px, auto);
+    /* adjustable rows */
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+/* IMAGE: spans 4 columns */
+#aatPic {
+    grid-column: 1 / span 5;
+    grid-row: 1 / span 4;
+    background-image: url("Screenshot\ 2025-12-10\ 212044.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+}
+
+/* TITLE: spans 2 columns */
+#aatTL {
+    grid-column: 6 / span 5;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: white;
+    border-radius: 12px;
+
+}
+
+#aatREVIEW {
+    grid-column: 6 / span 4;
+    grid-row: 2;
+    display: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 12px;
+    color: white;
+}
+
+#aatFAV1 {
+    grid-column: 6 / span 4;
+    grid-row: 4;
+    display: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none
+}
+
+#aatTL1TEXT {
+    grid-column: 6 / span 4;
+    grid-row: 3;
+    display: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 12px;
+    color: white;
+
+}
+
+a:active {
+    color: black;
+    /* Same color as normal state */
+}
