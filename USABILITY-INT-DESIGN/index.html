@@ -16,7 +16,7 @@
   </header>
 
   <!-- HERO SECTION -->
-  <section class="card hero">
+  <section class="card hero" id="hero-section">
     <div class="hero-text">
       <h1>WSU Campus Story Map</h1>
       <p>
@@ -25,43 +25,64 @@
         in the Pacific Northwest.
       </p>
     </div>
+
     <div class="hero-image">
       <img src="campus.jpg" alt="WSU Campus"/>
-      <button class="btn">Open to Map</button>
+      <button class="btn" id="openMapBtn">Open to Map</button>
     </div>
   </section>
 
   <!-- MAP PREVIEW -->
-  <section class="card map-section">
+  <section class="card map-section" id="map-section">
     <div class="map">
       <img src="map.jpg" alt="Map"/>
     </div>
+
     <div class="map-preview">
       <img src="campus.jpg" alt="Preview"/>
       <h3>PULLMAN MAP TEST</h3>
-      <button class="btn small">Start Exploring</button>
+      <button class="btn small" id="exploreBtn">Start Exploring</button>
     </div>
   </section>
 
   <!-- DETAIL SECTION -->
-  <section class="card detail">
+  <section class="card detail" id="detail-section">
     <div class="detail-map">
       <img src="map-zoom.jpg" alt="Map Detail"/>
     </div>
+
     <div class="detail-text">
       <h4>Notable Alumni:</h4>
       <h2>HOLLAND-TERRELL LIBRARY</h2>
-      <p>
+
+      <p id="libraryText">
         Located in the heart of campus, Holland-Terrell Library is a central hub for
         students, offering collaborative spaces, research tools, and scenic study areas.
       </p>
 
       <div class="actions">
-        <button class="btn play">▶</button>
-        <button class="btn outline">HISTORY</button>
+        <button class="btn play" id="playBtn">▶</button>
+        <button class="btn outline" id="historyBtn">HISTORY</button>
       </div>
     </div>
   </section>
 
+  <!-- VIDEO MODAL -->
+  <div class="video-modal" id="videoModal">
+    <div class="video-content">
+      <span class="close-btn" id="closeVideo">&times;</span>
+
+      <iframe
+        id="videoFrame"
+        width="560"
+        height="315"
+        src=""
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
