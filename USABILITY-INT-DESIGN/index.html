@@ -15,9 +15,9 @@
     <div class="menu" id="menuBtn">☰</div>
 
     <nav class="dropdown-menu" id="dropdownMenu">
-      <a href="#hero-section">Home</a>
-      <a href="#map-section">Map</a>
-      <a href="#detail-section">History</a>
+      <a href="index.html">Home</a>
+      <a href="sources.html">Our Sources</a>
+      <a href="https://uploads.knightlab.com/storymapjs/46c00b809c4314bd52d681a0a98917b2/map-test-2/index.html" target="_blank">Open Story Map</a>
     </nav>
   </div>
 </header>
@@ -25,47 +25,26 @@
 <section class="hero" id="hero-section">
   <div class="hero-overlay">
     <h1>Explore Washington State University</h1>
-    <p>Discover landmarks, history, and student stories through an immersive interactive experience.</p>
+    <p>
+      Discover WSU's campus history, landmarks, and student culture through an interactive story map experience.
+    </p>
     <button class="btn" id="openMapBtn">Launch Story Map</button>
   </div>
 </section>
 
-<section class="card map-section" id="map-section">
+<section class="card map-section">
   <div class="map">
     <img src="map.jpg" alt="Campus Map">
   </div>
 
   <div class="map-preview">
     <h2>Interactive Campus Exploration</h2>
-    <p>Navigate key landmarks and student hotspots around campus.</p>
-    <button class="btn" id="exploreBtn">Start Exploring</button>
-  </div>
-</section>
-
-<section class="card detail" id="detail-section">
-  <div class="detail-map">
-    <img src="library.jpg" alt="Library">
-  </div>
-
-  <div class="detail-text">
-    <h2>Holland-Terrell Library</h2>
-    <p id="libraryText">
-      Located in the heart of campus, Holland-Terrell Library is one of WSU's most recognizable academic buildings.
+    <p>
+      Dive into important campus landmarks and explore WSU through our interactive storytelling map.
     </p>
-
-    <div class="actions">
-      <button class="btn play" id="playBtn">▶ Watch</button>
-      <button class="btn outline" id="historyBtn">History</button>
-    </div>
+    <button class="btn" id="exploreBtn">Open Interactive Map</button>
   </div>
 </section>
-
-<div class="video-modal" id="videoModal">
-  <div class="video-content">
-    <span class="close-btn" id="closeVideo">×</span>
-    <iframe id="videoFrame" src="" allowfullscreen></iframe>
-  </div>
-</div>
 
 <script src="script.js"></script>
 </body>
