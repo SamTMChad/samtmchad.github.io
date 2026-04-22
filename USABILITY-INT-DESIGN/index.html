@@ -1,88 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>WSU Campus Story Map</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WSU Story Map</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="topbar">
-    <div class="menu">&#9776;</div>
-    <div class="title">WSU</div>
-    <div class="logo"></div>
-  </header>
+<header class="topbar">
+  <div class="title">WSU Story Map</div>
 
-  <!-- HERO SECTION -->
-  <section class="card hero" id="hero-section">
-    <div class="hero-text">
-      <h1>WSU Campus Story Map</h1>
-      <p>
-        The Washington State University Pullman Campus Story Map explores the landscape,
-        landmarks, and student life that shape one of the most scenic university campuses
-        in the Pacific Northwest.
-      </p>
-    </div>
+  <div class="menu-container">
+    <div class="menu" id="menuBtn">☰</div>
 
-    <div class="hero-image">
-      <img src="campus.jpg" alt="WSU Campus"/>
-      <button class="btn" id="openMapBtn">Open to Map</button>
-    </div>
-  </section>
+    <nav class="dropdown-menu" id="dropdownMenu">
+      <a href="#hero-section">Home</a>
+      <a href="#map-section">Map</a>
+      <a href="#detail-section">History</a>
+    </nav>
+  </div>
+</header>
 
-  <!-- MAP PREVIEW -->
-  <section class="card map-section" id="map-section">
-    <div class="map">
-      <img src="map.jpg" alt="Map"/>
-    </div>
+<section class="hero" id="hero-section">
+  <div class="hero-overlay">
+    <h1>Explore Washington State University</h1>
+    <p>Discover landmarks, history, and student stories through an immersive interactive experience.</p>
+    <button class="btn" id="openMapBtn">Launch Story Map</button>
+  </div>
+</section>
 
-    <div class="map-preview">
-      <img src="campus.jpg" alt="Preview"/>
-      <h3>PULLMAN MAP TEST</h3>
-      <button class="btn small" id="exploreBtn">Start Exploring</button>
-    </div>
-  </section>
-
-  <!-- DETAIL SECTION -->
-  <section class="card detail" id="detail-section">
-    <div class="detail-map">
-      <img src="map-zoom.jpg" alt="Map Detail"/>
-    </div>
-
-    <div class="detail-text">
-      <h4>Notable Alumni:</h4>
-      <h2>HOLLAND-TERRELL LIBRARY</h2>
-
-      <p id="libraryText">
-        Located in the heart of campus, Holland-Terrell Library is a central hub for
-        students, offering collaborative spaces, research tools, and scenic study areas.
-      </p>
-
-      <div class="actions">
-        <button class="btn play" id="playBtn">▶</button>
-        <button class="btn outline" id="historyBtn">HISTORY</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- VIDEO MODAL -->
-  <div class="video-modal" id="videoModal">
-    <div class="video-content">
-      <span class="close-btn" id="closeVideo">&times;</span>
-
-      <iframe
-        id="videoFrame"
-        width="560"
-        height="315"
-        src=""
-        frameborder="0"
-        allowfullscreen>
-      </iframe>
-    </div>
+<section class="card map-section" id="map-section">
+  <div class="map">
+    <img src="map.jpg" alt="Campus Map">
   </div>
 
-  <script src="script.js"></script>
+  <div class="map-preview">
+    <h2>Interactive Campus Exploration</h2>
+    <p>Navigate key landmarks and student hotspots around campus.</p>
+    <button class="btn" id="exploreBtn">Start Exploring</button>
+  </div>
+</section>
+
+<section class="card detail" id="detail-section">
+  <div class="detail-map">
+    <img src="library.jpg" alt="Library">
+  </div>
+
+  <div class="detail-text">
+    <h2>Holland-Terrell Library</h2>
+    <p id="libraryText">
+      Located in the heart of campus, Holland-Terrell Library is one of WSU's most recognizable academic buildings.
+    </p>
+
+    <div class="actions">
+      <button class="btn play" id="playBtn">▶ Watch</button>
+      <button class="btn outline" id="historyBtn">History</button>
+    </div>
+  </div>
+</section>
+
+<div class="video-modal" id="videoModal">
+  <div class="video-content">
+    <span class="close-btn" id="closeVideo">×</span>
+    <iframe id="videoFrame" src="" allowfullscreen></iframe>
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>

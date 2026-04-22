@@ -1,66 +1,58 @@
-// Open Story Map Link
-document.getElementById("openMapBtn").addEventListener("click", function () {
-    window.open(
-        "https://uploads.knightlab.com/storymapjs/46c00b809c4314bd52d681a0a98917b2/map-test-2/index.html",
-        "_blank"
-    );
+// dropdown menu
+const menuBtn = document.getElementById('menuBtn');
+const dropdownMenu = document.getElementById('dropdownMenu');
+
+menuBtn.addEventListener('click', () => {
+  dropdownMenu.style.display =
+    dropdownMenu.style.display === 'block' ? 'none' : 'block';
 });
 
-// Scroll to Detail Section
-document.getElementById("exploreBtn").addEventListener("click", function () {
-    document.getElementById("detail-section").scrollIntoView({
-        behavior: "smooth"
-    });
+// open story map
+ document.getElementById('openMapBtn').addEventListener('click', () => {
+  window.open(
+    'https://uploads.knightlab.com/storymapjs/46c00b809c4314bd52d681a0a98917b2/map-test-2/index.html',
+    '_blank'
+  );
 });
 
-// Alternate History Text
-const originalText =
-`Located in the heart of campus, Holland-Terrell Library is a central hub for
-students, offering collaborative spaces, research tools, and scenic study areas.`;
+// scroll to detail section
+ document.getElementById('exploreBtn').addEventListener('click', () => {
+  document.getElementById('detail-section').scrollIntoView({
+    behavior: 'smooth'
+  });
+});
 
-const historyText =
-`Originally opened in 1950 and later renovated into the Holland and Terrell Libraries,
-this landmark has become one of WSU's most iconic academic spaces, serving generations
-of students through evolving technology and research needs.`;
+// history toggle
+const originalText = 'Located in the heart of campus, Holland-Terrell Library is one of WSU\'s most recognizable academic buildings.';
+
+const historyText = 'Built through multiple expansions over decades, Holland-Terrell has evolved into a major learning hub for generations of Cougs.';
 
 let showingHistory = false;
 
-document.getElementById("historyBtn").addEventListener("click", function () {
-    const textElement = document.getElementById("libraryText");
+ document.getElementById('historyBtn').addEventListener('click', () => {
+  const text = document.getElementById('libraryText');
 
-    if (!showingHistory) {
-        textElement.textContent = historyText;
-        this.textContent = "CURRENT INFO";
-    } else {
-        textElement.textContent = originalText;
-        this.textContent = "HISTORY";
-    }
+  if (!showingHistory) {
+    text.textContent = historyText;
+  } else {
+    text.textContent = originalText;
+  }
 
-    showingHistory = !showingHistory;
+  showingHistory = !showingHistory;
 });
 
-// Video Modal
-const playBtn = document.getElementById("playBtn");
-const videoModal = document.getElementById("videoModal");
-const closeVideo = document.getElementById("closeVideo");
-const videoFrame = document.getElementById("videoFrame");
+// video modal
+const modal = document.getElementById('videoModal');
+const playBtn = document.getElementById('playBtn');
+const closeBtn = document.getElementById('closeVideo');
+const frame = document.getElementById('videoFrame');
 
-playBtn.addEventListener("click", function () {
-    videoModal.style.display = "flex";
-
-    // Replacing with  actual YouTube/video URL
-    videoFrame.src = "https://www.youtube.com/embed/dQw4w9WgXcQ";
+playBtn.addEventListener('click', () => {
+  modal.style.display = 'flex';
+  frame.src = 'https://www.youtube.com/embed/dQw4w9WgXcQ';
 });
 
-closeVideo.addEventListener("click", function () {
-    videoModal.style.display = "none";
-    videoFrame.src = "";
-});
-
-// Close modal if clicking outside video
-window.addEventListener("click", function (e) {
-    if (e.target === videoModal) {
-        videoModal.style.display = "none";
-        videoFrame.src = "";
-    }
+closeBtn.addEventListener('click', () => {
+  modal.style.display = 'none';
+  frame.src = '';
 });
