@@ -22,37 +22,6 @@ menuBtn.addEventListener('click', () => {
   });
 });
 
-// history toggle
-const originalText = 'Located in the heart of campus, Holland-Terrell Library is one of WSU\'s most recognizable academic buildings.';
+// no more history section or video modal needed
 
-const historyText = 'Built through multiple expansions over decades, Holland-Terrell has evolved into a major learning hub for generations of Cougs.';
-
-let showingHistory = false;
-
- document.getElementById('historyBtn').addEventListener('click', () => {
-  const text = document.getElementById('libraryText');
-
-  if (!showingHistory) {
-    text.textContent = historyText;
-  } else {
-    text.textContent = originalText;
-  }
-
-  showingHistory = !showingHistory;
-});
-
-// video modal
-const modal = document.getElementById('videoModal');
-const playBtn = document.getElementById('playBtn');
-const closeBtn = document.getElementById('closeVideo');
-const frame = document.getElementById('videoFrame');
-
-playBtn.addEventListener('click', () => {
-  modal.style.display = 'flex';
-  frame.src = 'https://www.youtube.com/embed/dQw4w9WgXcQ';
-});
-
-closeBtn.addEventListener('click', () => {
-  modal.style.display = 'none';
-  frame.src = '';
-});
+// open map from homepage button
