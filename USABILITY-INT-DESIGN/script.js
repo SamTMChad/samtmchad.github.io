@@ -48,7 +48,7 @@ const videoFrame = document.getElementById("videoFrame");
 playBtn.addEventListener("click", function () {
     videoModal.style.display = "flex";
 
-    // Replace with your actual YouTube/video URL
+    // Replacing with  actual YouTube/video URL
     videoFrame.src = "https://www.youtube.com/embed/dQw4w9WgXcQ";
 });
 
